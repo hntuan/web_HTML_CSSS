@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="icon" href="./img/paris.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="main">
+        <div class="gird">
+            <div class="header">
+                <label for="check-icon" class="header-icon-bars">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="header_name">
+                    <span>HOLIDAY</span>
+                </div>
+                <div class="header_content">
+                    <ul class="header_content-list">
+                        <div class="header_content-item">
+                            <a href="#" class="header_content-link">HOME</a>
+                        </div>
+                        <div class="header_content-item">
+                            <a href="#" class="header_content-link">ABOUT</a>
+                        </div>
+                        <div class="header_content-item">
+                            <a href="#" class="header_content-link">OUR TOURS</a>
+                        </div>
+                        <div class="header_content-item">
+                            <a href="#" class="header_content-link">CONTACT</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <input type="checkbox" hidden class="check-icon-input" name="" id="check-icon">
+            <label for="check-icon" class="overlay"></label>
+            <div class="header_content-mobile">
+                <div class="header_content-mobile-label">
+                    <label for="check-icon" class="header_content-mobile-icon">
+                        <i class="icon fas fa-times"></i>
+                    </label>
+                </div>
+                
+                <ul class="header_content-mobile-list">
+                    <div class="header_content-mobile-item">
+                        <a href="#" class="header_content-mobile-link">HOME</a>
+                    </div>
+                    <div class="header_content-mobile-item">
+                        <a href="#" class="header_content-mobile-link">ABOUT</a>
+                    </div>
+                    <div class="header_content-mobile-item">
+                        <a href="#" class="header_content-mobile-link">OUR TOURS</a>
+                    </div>
+                    <div class="header_content-mobile-item">
+                        <a href="#" class="header_content-mobile-link">CONTACT</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="introduce">
+                <div class="introduce_img"></div>
+                <div class="introduce_content">
+                    <p>FIND <span>THE BEST</span> PLACE</p><br>
+                    <p>FOR YOUR HOLIDAYS</p><br>
+                    <input class="introduce_btn" type="button" value="LEARN MORE">
+               </div>
+            </div>
+            <div class="content">
+                <div class="content_introduce">
+                    <div class="width row sm-gutter">
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content_introduce_search">
+                                <div class="content_introduce_search-name">
+                                    <div>HOTEL</div>
+                                    <div>CAR RENTAL</div>
+                                </div>
+                                <div class="content_introduce_search-list">
+                                    <input list="travels" name="travel" placeholder="--Select Hotel--" id="travel">
+                                    <datalist id="travels">
+                                        <option value="New York">
+                                        <option value="Paris">
+                                        <option value="LonDon">
+                                        <option value="Paris">
+                                    </datalist>
+                                    <div class="travel-icon"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                                <div class="content_introduce_search-list">
+                                    <input type="text" name="checkin" placeholder="Check-in Date" id="checkin">
+                                    <div class="text-icon"><i class="fas fa-calendar-alt"></i></div>
+                                </div>
+                                <div class="content_introduce_search-list">
+                                    <input type="text" name="checkout" placeholder="Check-out Date" id="checkout">
+                                    <div class="text-icon"><i class="fas fa-calendar-alt"></i></div>
+                                </div>
+                               
+                                <div class="content_introduce_search-list">
+                                    <input list="Guests" name="Guest" placeholder="--Guests--" id="Guest">
+                                    <datalist id="Guests">
+                                        <option value="New York">
+                                        <option value="Paris">
+                                        <option value="LonDon">
+                                        <option value="Paris">
+                                    </datalist>
+                                    <div class="Guests-icon"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                                <div class="content_introduce_search-btn">
+                                    <input class="content_introduce-btn" type="button" value="CHECK NOW">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content_introduce_search">
+                                <div>
+                                    <img class="content_introduce_search-img" src="./img/new-york.png" alt="">
+                                </div>
+                                <div class="content_introduce_search-price newyork">
+                                    <div>NEW YORK</div>
+                                    <div>$6,600</div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-12">
+                            <div class="content_introduce_search">
+                                <div>
+                                    <img class="content_introduce_search-img" src="./img/paris.png" alt="">
+                                </div>
+                                <div class="content_introduce_search-price paris">
+                                    <div>PARIS</div>
+                                    <div>$4,200</div>
+                                </div> 
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="seperate">
+                    <div class="seperate_line no-margin-right"></div>
+                    <div class="seperate_text">
+                        <span>LOREM IPSUM DOLOR</span>
+                    </div>
+                    <div class="seperate_line no-margin-left"></div>
+                </div>
+
+                <div class="content_travel">
+                    <div class="width row-travel sm-gutter">
+                        <div class="col-travel l-3 m-6 c-12">
+                            <div class="content_travel_search">
+                                <img class="content_travel_search-img" src="./img/travel-1.png" alt="">
+                                <div class="content_travel_search-text">
+                                    <span>PROIN GRAVIDA NIBHVEL</span> <br>
+                                    <span>LOREM QUIS BIND</span>
+                                </div>
+                                <br><br><p>25 MARCH 2020</p>
+                                <div class="content_travel_search-icon">
+                                    <div class="content_travel_search-icon-heart">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="content_travel_search-icon-travel">
+                                       <span>TRAVEL</span>
+                                    </div>
+                                    <div class="content_travel_search-icon-edit">
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-travel l-3 m-6 c-12">
+                            <div class="content_travel_search">
+                                <img class="content_travel_search-img" src="./img/travel-2.png" alt="">
+                                <div class="content_travel_search-text">
+                                    <span>PROIN GRAVIDA NIBHVEL</span> <br>
+                                    <span>LOREM QUIS BIND</span>
+                                </div>
+                                <br><br><p>25 MARCH 2020</p>
+                                <div class="content_travel_search-icon">
+                                    <div class="content_travel_search-icon-heart">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="content_travel_search-icon-travel">
+                                       <span>TRAVEL</span>
+                                    </div>
+                                    <div class="content_travel_search-icon-edit">
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-travel l-3 m-6 c-12">
+                            <div class="content_travel_search">
+                                <img class="content_travel_search-img" src="./img/travel-3.png" alt="">
+                                <div class="content_travel_search-text">
+                                    <span>PROIN GRAVIDA NIBHVEL</span> <br>
+                                    <span>LOREM QUIS BIND</span>
+                                </div>
+                                <br><br><p>25 MARCH 2020</p>
+                                <div class="content_travel_search-icon">
+                                    <div class="content_travel_search-icon-heart">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="content_travel_search-icon-travel">
+                                       <span>TRAVEL</span>
+                                    </div>
+                                    <div class="content_travel_search-icon-edit">
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-travel l-3 m-6 c-12">
+                            <div class="content_travel_search">
+                                <img class="content_travel_search-img" src="./img/travel-4.png" alt="">
+                                <div class="content_travel_search-text">
+                                    <span>PROIN GRAVIDA NIBHVEL</span> <br>
+                                    <span>LOREM QUIS BIND</span>
+                                </div>
+                                <br><br><p>25 MARCH 2020</p>
+                                <div class="content_travel_search-icon">
+                                    <div class="content_travel_search-icon-heart">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="content_travel_search-icon-travel">
+                                       <span>TRAVEL</span>
+                                    </div>
+                                    <div class="content_travel_search-icon-edit">
+                                        <i class="far fa-edit"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content background-popular">
+                <div class="seperate">
+                    <div class="seperate_line no-margin-right"></div>
+                    <div class="seperate_text">
+                        <span>POPULAR PACKAGES</span>
+                    </div>
+                    <div class="seperate_line no-margin-left"></div>
+                </div>
+
+                <div class="content_popular">
+                    <div class="width row-popular sm-gutter">
+                        <div class="col-popular l-6 m-12 c-12">
+                            <div class="content_popular_content">
+                                <img class="content_popular_search-img" src="./img/popular-1.png" alt="">
+                                <div class="content_popular_travel">
+                                    <div class="content_popular_travel-text"><span>Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</span></div>
+                                    <div class="content_popular_search-icon">
+                                        <div class="content_popular_search-icon-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="content_popular_search-icon-travel">
+                                           <span>TRAVEL</span>
+                                        </div>
+                                        <div class="content_popular_search-icon-edit">
+                                            <i class="far fa-edit"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-popular l-6 m-12 c-12">
+                            <div class="content_popular_content">
+                                <img class="content_popular_search-img" src="./img/popular-2.png" alt="">
+                                <div class="content_popular_travel">
+                                    <div class="content_popular_travel-text"><span>Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</span></div>
+                                    <div class="content_popular_search-icon">
+                                        <div class="content_popular_search-icon-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="content_popular_search-icon-travel">
+                                           <span>TRAVEL</span>
+                                        </div>
+                                        <div class="content_popular_search-icon-edit">
+                                            <i class="far fa-edit"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-popular l-6 m-12 c-12">
+                            <div class="content_popular_content">
+                                <img class="content_popular_search-img" src="./img/popular-3.png" alt="">
+                                <div class="content_popular_travel">
+                                    <div class="content_popular_travel-text"><span>Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</span></div>
+                                    <div class="content_popular_search-icon">
+                                        <div class="content_popular_search-icon-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="content_popular_search-icon-travel">
+                                           <span>TRAVEL</span>
+                                        </div>
+                                        <div class="content_popular_search-icon-edit">
+                                            <i class="far fa-edit"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-popular l-6 m-12 c-12">
+                            <div class="content_popular_content">
+                                <img class="content_popular_search-img" src="./img/popular-4.png" alt="">
+                                <div class="content_popular_travel">
+                                    <div class="content_popular_travel-text"><span>Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</span></div>
+                                    <div class="content_popular_search-icon">
+                                        <div class="content_popular_search-icon-heart">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="content_popular_search-icon-travel">
+                                           <span>TRAVEL</span>
+                                        </div>
+                                        <div class="content_popular_search-icon-edit">
+                                            <i class="far fa-edit"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span>Copyright 2021 © <strong>hotuantd@gmail.com</strong> a member of HN Tuan. Contact: 0396221385</span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

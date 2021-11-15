@@ -1,0 +1,20 @@
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;   /* font chữ */
+    box-sizing: border-box;
+}
+
+
+.none-margin{
+    margin: 0;
+}
+
+.margin-right{
+    margin-right: 15px;
+}

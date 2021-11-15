@@ -1,0 +1,107 @@
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .dishes .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    }
+
+    .menu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    
+    .header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    
+
+}
+
+@media (max-width: 768px){
+
+    .header .icons #bars-icon{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2) !important;
+        border-bottom: .1rem solid rgba(0,0,0,.2) !important;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+        
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }   
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 450px){
+  
+    html{
+        font-size: 50%;
+    }
+    
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #0e0e0e;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.main{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.width{
+    width: calc(100% + 40px);
+}
+
+.background-popular{
+    background-color: #ffffff !important;
+}
+
+.no-margin-left{
+    margin-left: 0 !important;
+}
+
+.no-margin-right{
+    margin-right: 0 !important;
+}
+/* header */
+.header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    width: 1000px;
+    max-width: 1000px;
+    z-index: 99999;
+}
+
+.header_name{
+    color: #f2e048;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto 100px;
+}
+
+.header_content-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    height: 100%;
+}
+
+.header_content{ 
+    margin-right: 80px;
+}
+
+
+
+.header_content-item{
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header_content-item:hover{
+    background-color: #f2e048;
+    color: rgb(1, 1, 14);
+}
+
+.header_content-item:hover .header_content-link{
+    color: rgb(2, 2, 27);
+}
+.header_content-link{
+    margin: 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+    line-height: 60px;
+    height: 100vh;
+    font-weight: 600;
+}
+
+.cover_img-img{
+    width: 100%;
+
+}
+
+.introduce{
+    background-color: rgba(255, 248, 220, 0.013);
+    height: 530px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.introduce_img{
+    width: 1000px;
+    position: absolute;
+    background-image: url(../img/img-content.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.3;
+    height: 530px;
+    z-index: -1;
+}
+
+.introduce{
+    text-align: center;
+}
+
+.introduce_content{
+    padding-top: 110px;
+}
+
+.introduce_content p:nth-child(1){
+    font-size: 50px;
+    font-weight: 600;
+    color: cornsilk;
+    margin: 0;
+}
+
+.introduce_content p{
+    font-size: 25px;
+    font-weight: 600;
+    color: cornsilk;
+    margin: 0 0 10px 0;
+}
+.introduce_content p span{
+    color: #c2a033;
+}
+.introduce_btn{
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    color: cornsilk;
+    background-color: #c2a033;
+    border: 1px;
+    cursor: pointer;
+}
+
+.introduce_btn:hover{
+    color: #c2a033;
+    background-color: rgb(220, 217, 217);
+}
+.content{
+    background-color: #e5e5e5;
+    padding-bottom: 50px;
+}
+
+.content_travel,
+.content_introduce{
+    display: flex;
+    width: calc(100% - 200px);
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.content_introduce_search{
+    background-color: #ffffff;
+    margin-top: -70px;
+    z-index: 99;
+    box-shadow: 0px 5px rgb(176, 170, 170);
+
+}
+
+
+.content_introduce_search-name{
+    background-color: #f7cc11;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_introduce_search-name div{
+    line-height: 50px;
+    font-size: 13px;
+    width: 50%;
+    font-weight: 600;
+    color: rgb(54, 49, 49);
+
+}
+
+.content_introduce_search-name div:nth-child(1){
+    background-color: #ffffff;
+}
+
+.content_introduce_search-list{
+    margin: 18px;
+    text-align: center;
+    position: relative;
+}
+
+.text-icon,
+.Guests-icon,
+.travel-icon{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: rgb(184, 180, 180);
+    padding: 7px 6px 7px 6px;
+    border: 1px solid rgb(204, 201, 201);
+}
+
+#checkout,
+#checkin{
+    background-color: rgb(233, 227, 227);
+    padding: 7px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    border: 1px solid rgb(204, 201, 201);
+    width: 100%;
+    text-align: center;
+}
+
+#Guest,
+#travel{
+    background-color: rgb(233, 227, 227);
+    padding: 7px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    border: 1px solid rgb(218, 215, 215);
+    width: 100%;
+    text-align: center;
+}
+
+.content_introduce_search-btn{
+    background-color: #f6ca13;
+    height: 60px;
+    text-align: center; 
+    margin-top: -3px;
+}
+
+.content_introduce-btn{
+    margin-top: 16px;
+    padding: 8px;
+    background-color: #edd21c;
+    border: 1px solid rgb(186, 182, 182);
+    cursor: pointer;
+}
+.content_introduce-btn:hover{
+    background-color: #999;
+}
+
+.content_introduce_search-img{
+    width: 100%;
+    height: 250px;
+}
+
+.content_introduce_search-price{
+    height: 60px;
+    display: flex;
+    text-align: center;
+    margin-top: -4px;
+    
+}
+
+
+.content_introduce_search-price div{
+    line-height: 60px;
+    font-size: 14px;
+    width: 50%;
+    font-weight: 600;
+    color: rgb(247, 240, 240);
+
+}
+
+.content_introduce_search-price div{
+    line-height: 60px;
+    font-size: 14px;
+    width: 50%;
+    font-weight: 600;
+    color: rgb(247, 240, 240);
+
+}
+
+.newyork{
+    background-color: #29c469;
+}
+.paris{
+    background-color: #ec665b;
+}
+
+.seperate{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.seperate_text{
+    line-height: 100px;
+    font-size: 18px;
+    color: #666;
+}
+.margin-left{
+    margin-left: 0;
+}
+.seperate_line{
+    width: 200px;
+    border-bottom: 2px solid #888;
+    margin: 50px 100px 50px 100px;
+    box-shadow: 0px 1px #333;
+
+}
+
+.content_travel_search{
+    background-color: #ffffff;
+    box-shadow: 0px 1px 0px 1px rgb(214, 208, 208);
+
+}
+.content_travel_search p{
+    margin-left: 15px;
+    color: #888;
+}
+
+.content_travel_search-img{
+    width: 100%;
+}
+
+.content_travel_search-text{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+.content_travel_search-icon{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(216, 209, 209);
+    height: 45px;
+    font-size: 14px;
+}
+
+.content_travel_search-icon-heart{
+    border-right: 1px solid rgb(216, 209, 209);
+    width: 25%;
+    line-height: 45px;
+
+}
+
+.content_travel_search-icon-travel span,
+.content_travel_search-icon-edit i,
+.content_travel_search-icon-heart i{
+    cursor: pointer;
+}
+
+.content_travel_search-icon-travel{
+    font-size: 12px;
+    line-height: 45px;
+    width: 50%;
+    color: #666;
+ 
+}
+
+.content_travel_search-icon-edit{
+    border-left: 1px solid rgb(216, 209, 209);
+    width: 25%;
+    line-height: 45px;
+  
+}
+
+
+.content_popular{
+    display: flex;
+    width: calc(100% - 200px);
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content_popular_search-img{
+    width: 45%;
+}
+
+.content_popular_travel{
+    border-bottom: 1px solid rgb(198, 191, 191);
+    border-right: 1px solid rgb(216, 209, 209);
+    border-top: 1px solid rgb(216, 209, 209);
+
+}
+
+.content_popular_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_popular_search-icon{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(216, 209, 209);
+    height: 45px;
+    font-size: 14px;
+    
+}
+.content_popular_travel-text{
+    padding: 30px 15px 30px 15px;
+    font-size: 12px;
+    color: #444;
+}
+
+.content_popular_search-icon-heart{
+    border-right: 1px solid rgb(216, 209, 209);
+    width: 25%;
+    line-height: 45px;
+}
+.content_popular_search-icon-edit i,
+.content_popular_search-icon-travel span,
+.content_popular_search-icon-heart i{
+    cursor: pointer;
+}
+.content_popular_search-icon-travel{
+    font-size: 12px;
+    line-height: 45px;
+    width: 50%;
+    color: #666;
+    
+}
+
+.content_popular_search-icon-edit{
+    border-left: 1px solid rgb(216, 209, 209);
+    width: 25%;
+    line-height: 45px;
+}
+
+
+.footer{
+    background-color: #000000;
+    text-align: center;
+    height: 50px;
+}
+.footer span{
+    color: rgb(133, 127, 127);
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.overlay{
+    display: none;
+}
+.header_content-mobile{
+    display: none;
+}
+
+.header-icon-bars{
+    display: none;
+}
